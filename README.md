@@ -1,3 +1,2 @@
 # Projects
-
-http://www.lszyszka.github.io/Projects/ToDoList
+lszyszka.github.io/Projects/ToDoList
