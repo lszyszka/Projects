@@ -1,2 +1,3 @@
 # Projects
-lszyszka.github.io/Projects/ToDoList
+Simple ToDoList 
+https://lszyszka.github.io/Projects/ToDoList/
