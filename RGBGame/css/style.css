@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Coda Caption', sans-serif; }
+
+body {
+  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%; }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  margin: 2% auto;
+  width: 100%;
+  height: 100%; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px; }
+
+.col-1 {
+  width: 33.33%; }
+
+.col-2 {
+  width: 66.66%; }
+
+.col-3 {
+  width: 100%; }
+
+.row:nth-child(1) .col-3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff; }
+  .row:nth-child(1) .col-3 .randomColor {
+    font-size: 200%; }
+
+.row:nth-child(2) {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center; }
+  .row:nth-child(2) .col-2 {
+    color: #fff; }
+    .row:nth-child(2) .col-2 ul {
+      list-style-type: none;
+      /* height:100%;*/ }
+      .row:nth-child(2) .col-2 ul li {
+        display: inline-block;
+        font-size: 1.6rem; }
+      .row:nth-child(2) .col-2 ul .message {
+        float: right; }
+  .row:nth-child(2) .newGame {
+    margin-left: 4%; }
+    .row:nth-child(2) .newGame:hover {
+      border-bottom: 3px solid #fff;
+      background: transparent; }
+  .row:nth-child(2) .message {
+    padding-right: 9%; }
+
+.row:nth-child(3) {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center; }
+
+#square {
+  width: 180px;
+  height: 180px;
+  border-radius: 15%;
+  background-color: #fff;
+  margin: 3%;
+  text-align: center; }
+  #square:hover {
+    opacity: 0.7;
+    transform: scale(1.2); }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-attachment: initial; }
+
+  .row:nth-child(1) .col-3 .randomColor {
+    font-size: 95%; }
+  .row:nth-child(1) .col-3 .luck {
+    font-size: 80%; }
+
+  .row:nth-child(2) {
+    margin-top: 0%; }
+    .row:nth-child(2) .col-2 {
+      width: 100%;
+      color: #fff; }
+      .row:nth-child(2) .col-2 ul {
+        list-style-type: none;
+        width: 100%; }
+        .row:nth-child(2) .col-2 ul li {
+          list-style: none;
+          font-size: 1.3rem;
+          padding-left: 15%;
+          clear: both; }
+        .row:nth-child(2) .col-2 ul .message {
+          float: left;
+          padding-top: 4%;
+          width: 100%;
+          clear: both; }
+    .row:nth-child(2) .newGame {
+      float: left;
+      text-decoration: underline; }
+      .row:nth-child(2) .newGame:hover {
+        border-bottom: 0px solid #fff;
+        background: transparent; }
+
+  #square {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    background-color: #fff;
+    margin: 3%;
+    text-align: center; }
+    #square:nth-child(3) {
+      margin-right: 20px; }
+    #square:hover {
+      opacity: 0.7;
+      transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
