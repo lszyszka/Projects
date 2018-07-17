@@ -3,7 +3,8 @@
   font-family: 'Coda Caption', sans-serif; }
 
 body {
-  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center fixed;
+  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center;
+  background-attachment: fixed;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -96,6 +97,9 @@ body:before {
     transform: scale(1.2); }
 
 @media only screen and (max-width: 768px) {
+  body {
+    background-attachment: initial; }
+
   .row:nth-child(1) .col-3 .randomColor {
     font-size: 95%; }
   .row:nth-child(1) .col-3 .luck {
