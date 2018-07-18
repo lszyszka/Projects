@@ -3,7 +3,7 @@
   font-family: 'Coda Caption', sans-serif; }
 
 body {
-  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center;
+  background: url("https://images.unsplash.com/photo-1523187747149-de89503385ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=619286876207bb4b39bbf1243630564a&auto=format&fit=crop&w=1350&q=80") no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -21,7 +21,8 @@ body:before {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url("http://hwilson.zenfolio.com/img/s/v-3/p140526108-3.jpg") no-repeat center center;
+  background: url("https://images.unsplash.com/photo-1523187747149-de89503385ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=619286876207bb4b39bbf1243630564a&auto=format&fit=crop&w=1350&q=80") no-repeat center center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -59,42 +60,46 @@ body:before {
     font-size: 200%; }
 
 .row:nth-child(2) {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center; }
-  .row:nth-child(2) .col-2 {
+  margin-top: 2%; }
+  .row:nth-child(2) .col-3 {
     color: #fff; }
-    .row:nth-child(2) .col-2 ul {
+    .row:nth-child(2) .col-3 ul {
       list-style-type: none;
+      text-align: center;
       /* height:100%;*/ }
-      .row:nth-child(2) .col-2 ul li {
-        display: inline-block;
+      .row:nth-child(2) .col-3 ul li {
         font-size: 1.6rem; }
-      .row:nth-child(2) .col-2 ul .message {
-        float: right; }
   .row:nth-child(2) .newGame {
-    margin-left: 4%; }
+    margin-left: -4%; }
     .row:nth-child(2) .newGame:hover {
-      border-bottom: 3px solid #fff;
-      background: transparent; }
-  .row:nth-child(2) .message {
-    padding-right: 9%; }
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0); }
 
 .row:nth-child(3) {
-  margin: 5% auto;
+  margin: 2% auto;
   display: flex;
   justify-content: center; }
 
 #square {
   width: 180px;
   height: 180px;
-  border-radius: 15%;
+  border-radius: 50%;
   background-color: #fff;
   margin: 3%;
+  opacity: 0.65;
   text-align: center; }
   #square:hover {
     opacity: 0.7;
     transform: scale(1.2); }
+
+.col-3 {
+  color: #fff; }
+  .col-3 ul {
+    list-style-type: none;
+    text-align: center;
+    /* height:100%;*/ }
+    .col-3 ul li {
+      font-size: 1.6rem; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -107,33 +112,30 @@ body:before {
 
   .row:nth-child(2) {
     margin-top: 0%; }
-    .row:nth-child(2) .col-2 {
+    .row:nth-child(2) .col-3 {
       width: 100%;
       color: #fff; }
-      .row:nth-child(2) .col-2 ul {
+      .row:nth-child(2) .col-3 ul {
         list-style-type: none;
         width: 100%; }
-        .row:nth-child(2) .col-2 ul li {
+        .row:nth-child(2) .col-3 ul li {
           list-style: none;
           font-size: 1.3rem;
-          padding-left: 15%;
-          clear: both; }
-        .row:nth-child(2) .col-2 ul .message {
-          float: left;
-          padding-top: 4%;
           width: 100%;
-          clear: both; }
+          padding-right: 5%; }
     .row:nth-child(2) .newGame {
       float: left;
       text-decoration: underline; }
       .row:nth-child(2) .newGame:hover {
-        border-bottom: 0px solid #fff;
-        background: transparent; }
+        background: rgba(0, 0, 0, 0); }
+
+  .message {
+    padding-right: 10%; }
 
   #square {
     width: 100px;
     height: 100px;
-    border-radius: 15%;
+    border-radius: 50%;
     background-color: #fff;
     margin: 3%;
     text-align: center; }
