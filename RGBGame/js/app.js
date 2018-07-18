@@ -59,9 +59,13 @@ for (var i = 0; i < 3; i++) {
     square[i].addEventListener('click', function () {
         if (this.style.backgroundColor == rightColor) {
             message.innerText = "Congratulations! Correct color!";
-            newGame.innerText = "Play again?";
+            newGame.innerText = "Next game start...";
             done = 1;
-            return 0;
+
+            setTimeout(function () {
+                location.reload();
+            },2000);
+
         }
         else {
             if (done < 1) {
