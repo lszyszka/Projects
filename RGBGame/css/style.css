@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Coda Caption', sans-serif; }
+  font-family: 'Bree Serif', serif; }
 
 body {
   background: url("https://images.unsplash.com/photo-1523187747149-de89503385ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=619286876207bb4b39bbf1243630564a&auto=format&fit=crop&w=1350&q=80") no-repeat center center;
@@ -68,11 +68,12 @@ body:before {
       text-align: center;
       /* height:100%;*/ }
       .row:nth-child(2) .col-3 ul li {
-        font-size: 1.6rem; }
+        font-size: 1.9rem; }
   .row:nth-child(2) .newGame {
-    margin-left: -4%; }
+    margin-left: 0%;
+    text-transform: uppercase; }
     .row:nth-child(2) .newGame:hover {
-      font-size: 2rem;
+      font-size: 2.3rem;
       background: rgba(0, 0, 0, 0); }
 
 .row:nth-child(3) {
@@ -99,7 +100,9 @@ body:before {
     text-align: center;
     /* height:100%;*/ }
     .col-3 ul li {
-      font-size: 1.6rem; }
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      padding-right: 2%; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -122,15 +125,16 @@ body:before {
           list-style: none;
           font-size: 1.3rem;
           width: 100%;
-          padding-right: 5%; }
+          padding-right: 12%; }
     .row:nth-child(2) .newGame {
       float: left;
       text-decoration: underline; }
       .row:nth-child(2) .newGame:hover {
         background: rgba(0, 0, 0, 0); }
 
-  .message {
-    padding-right: 10%; }
+  .menu .message {
+    padding-right: 10%;
+    text-transform: uppercase; }
 
   #square {
     width: 100px;
