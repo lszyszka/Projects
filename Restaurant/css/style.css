@@ -10,11 +10,7 @@ body {
 
 .jumbotron {
   background-image: url("../images/13.jpg");
-<<<<<<< HEAD
-  background-size: 100vw 100vw;
-=======
   background-size: 100vw 80vw;
->>>>>>> master
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -257,11 +253,7 @@ body {
 
 #parallax {
   background-image: url("../images/para.jpg");
-<<<<<<< HEAD
-  background-size: 100vw 100vw;
-=======
   background-size: 100vw 80vw;
->>>>>>> master
   background-repeat: no-repeat;
   background-attachment: fixed;
   /*background-position: center;*/
